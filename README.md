@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/bdwolfe/travis-ci-tutorial.svg?branch=master)](https://travis-ci.org/bdwolfe/travis-ci-tutorial)
-[![Code Coverage](https://codecov.io/github/bdwolfe/travis-ci-tutorial/coverage.svg)](https://codecov.io/gh/bdwolfe/travis-ci-tutorial)
+[![Build Status](https://travis-ci.org/bdwolfe/travis-ci-tutorial.svg?branch=master)](https://travis-ci.org/bdwolfe/travis-ci-tutorial)
+[![Coverage Status](https://coveralls.io/repos/github/bdwolfe/travis-ci-tutorial/badge.svg?branch=master)](https://coveralls.io/github/bdwolfe/travis-ci-tutorial?branch=master)
 
 # travis-ci-tutorial
 Just to learn how to use travis-ci in a java project! Modified from [Joao Neto's tutorial](https://github.com/joaomlneto/travis-ci-tutorial-java)
@@ -18,15 +18,8 @@ This is a working minimal example of how to use Travis CI (and Codecov) with Jav
 6. Under your profile settings, enable the repository
 7. Make another edit to the repository (e.g., edit `README.md`) and push the changes. This should trigger a build in Travis CI.
 
-## Code Coverage with CodeCov
+## Code Coverage with Coveralls
 
-This repository also integrates with Codecov to generate reports.
-
-What's done for you:
-- The [JaCoCo](https://www.jacoco.org) plugin is included in `pom.xml`
-- On `.travis.yml`, `after_success` target executes the Codecov script.
-
-What you need to do:
-- Go to the Codecov website and create an account (or log in) with your GitHub account
-- Add your repository (you can go there directly by going to https://codecov.io/gh/your-github-username/travis-ci-tutorial)
-- Fix the `README.md` badge.
+This repository also integrates with Coveralls to generate coverage reports.
+- The [JaCoCo](https://www.jacoco.org) and coveralls-maven-plugin are included in `pom.xml`
+- On `.travis.yml`, `after_success` target sends the code report to Coveralls.
