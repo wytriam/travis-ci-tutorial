@@ -4,7 +4,7 @@ jdk:
 - openjdk8
 - openjdk11
 after_script:
-- mvn -fn clean test jacoco:report coveralls:report 
+- mvn -Dmaven.test.failure.ignore=true clean test jacoco:report coveralls:report 
 notifications:
   slack:
     rooms:
