@@ -12,13 +12,13 @@ This is a working minimal example of how to use Travis CI (and Codecov) with Jav
 
 1. [Fork](https://github.com/bdwolfe/travis-ci-tutorial/fork) this Repository
 2. Make sure it is public (so we can get free CI!)
-3. Fix the `README.md` badges (replacing in the URL `bdwolfe` with `your-github-username`) and push the changes.
+3. Fix the `README.md` badges (replacing all the `bdwolfe` occurrences in the file with `your-github-username`) and push the changes.
 4. Go to [Travis CI](http://travis-ci.org) dot org (the .org is important!)
 5. Sign in with your GitHub account
 6. Under your profile settings, enable the repository
- This should trigger a build in Travis CI!
+7. Make another edit to the repository (e.g., edit `README.md`) and push the changes. This should trigger a build in Travis CI.
 
-## Optional: Code Coverage with CodeCov
+## Code Coverage with CodeCov
 
 This repository also integrates with Codecov to generate reports.
 
@@ -26,13 +26,7 @@ What's done for you:
 - The [JaCoCo](https://www.jacoco.org) plugin is included in `pom.xml`
 - On `.travis.yml`, `after_success` target executes the Codecov script.
 
-If you want to use it:
-- Go to the Codecov website and create an account and setup permissions.
-- Add your repository (you can go there directly by going to https://codecov.io/gh/your-github-username/travis-ci-tutorial-java)
+What you need to do:
+- Go to the Codecov website and create an account (or log in) with your GitHub account
+- Add your repository (you can go there directly by going to https://codecov.io/gh/your-github-username/travis-ci-tutorial)
 - Fix the `README.md` badge.
-
-If you don't want it:
-- Remove the [JaCoCo](https://www.jacoco.org) plugin from the `pom.xml`.
-- Remove the `after_success` target in `.travis.yml`
-- Remove the badge from `README.md`
-
