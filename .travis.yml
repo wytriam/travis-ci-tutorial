@@ -4,7 +4,7 @@ jdk:
 - openjdk8
 - openjdk11
 after_script:
-- mvn clean test jacoco:report coveralls:report
+- mvn clean test jacoco:report coveralls:report -fae
 notifications:
   slack:
     rooms:
