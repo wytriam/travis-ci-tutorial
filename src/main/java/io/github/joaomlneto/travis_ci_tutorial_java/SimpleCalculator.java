@@ -11,6 +11,9 @@ public class SimpleCalculator {
 		return a * b;
 	}
 	public int div(int a, int b) {
+		if(b == 0){
+			throw new IllegalArgumentException("Divisor cannot be 0");
+		}
 		return a / b;
 	}
 	public static final void main(String[] args) {
