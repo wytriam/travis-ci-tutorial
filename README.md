@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/bdwolfe/travis-ci-tutorial.svg?branch=master)](https://travis-ci.org/bdwolfe/travis-ci-tutorial)
-[![Coverage Status](https://coveralls.io/repos/github/bdwolfe/travis-ci-tutorial/badge.svg?branch=master)](https://coveralls.io/github/bdwolfe/travis-ci-tutorial?branch=master)
+[![Build Status](https://travis-ci.org/wytriam/travis-ci-tutorial.svg?branch=master)](https://travis-ci.org/wytriam/travis-ci-tutorial)
+[![Coverage Status](https://coveralls.io/repos/github/wytriam/travis-ci-tutorial/badge.svg?branch=master)](https://coveralls.io/github/wytriam/travis-ci-tutorial?branch=master)
 
 # travis-ci-tutorial
 Just to learn how to use travis-ci in a java project! Modified from [Joao Neto's tutorial](https://github.com/joaomlneto/travis-ci-tutorial-java)
